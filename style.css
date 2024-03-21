@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+:root {
+  --glass-color: rgba(255, 255, 255, 0.2);
+  --glass-border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 500px;
+  background-color: var(--glass-color); /* Use glass color for background */
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px); /* Apply glassmorphism effect */
+  border: 1px solid var(--glass-border-color); /* Add border for clarity */
+}
+h1 {
+  color: #ffff;
+  font-size: 38px;
+}
+.item-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 90%;
+}
+
+.item-input {
+  width: 100%;
+  outline: none;
+  background: #f0f0f0; /* Make input background transparent */
+  border: none;
+  padding: 15px;
+  color: #000;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.add-item {
+  background-color: #145da0; /* Change button background color */
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+  /* transition: transform 0.4s ease-in; */
+}
+
+.add-item:hover {
+  transform: scale(1.1);
+}
+
+.add-item i {
+  color: white;
+  font-weight: bold;
+}
+
+.item-body {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add gap between list items */
+  width: 100%; /* Ensure list items take full width */
+}
+
+.item {
+  background-color: var(
+    --glass-color
+  ); /* Use glass color for item background */
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to the right */
+  font-size: 18px;
+}
+
+.item .action {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.item .action i {
+  color: white;
+  font-size: 18px;
+  margin: 0px 5px;
+}
+
+.action i {
+  cursor: pointer;
+}
+.action i:first-child {
+  color: green;
+  font-weight: 600;
+}
+.action i:last-child {
+  color: red;
+}
+.strike-out {
+  text-decoration: line-through;
+  background-color: transparent;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.edit-mode {
+  background-color: #ffff;
+}
